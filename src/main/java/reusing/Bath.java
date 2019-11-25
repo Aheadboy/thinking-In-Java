@@ -10,7 +10,7 @@ class Soap {
     s = "Constructed";
   }
   public String toString() { return s; }
-}	
+}
 
 public class Bath {
   private String // Initializing at point of definition:
@@ -21,13 +21,15 @@ public class Bath {
   private int i;
   private float toy;
   public Bath() {
-    print("Inside Bath()");
+    print("Inside Bath() constructor");
     s3 = "Joy";
     toy = 3.14f;
     castille = new Soap();
-  }	
-  // Instance initialization:
-  { i = 47; }
+  }
+  // Instance initialization://在构造函数之前，运行可只该结果。
+  { i = 47;
+  print("Instance initialization");
+  }
   public String toString() {
     if(s4 == null) // Delayed initialization:
       s4 = "Joy";
@@ -39,7 +41,7 @@ public class Bath {
       "i = " + i + "\n" +
       "toy = " + toy + "\n" +
       "castille = " + castille;
-  }	
+  }
   public static void main(String[] args) {
     Bath b = new Bath();
     print(b);

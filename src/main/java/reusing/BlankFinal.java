@@ -13,9 +13,11 @@ public class BlankFinal {
   private final Poppet p; // Blank final reference
   // Blank finals MUST be initialized in the constructor:
   public BlankFinal() {
+//    int kk = j;//ljj1 final 域在使用前必须被初始化。//非final域则不需要可以试下，删除j的final，编译器就不报错了。
     j = 1; // Initialize blank final
     p = new Poppet(1); // Initialize blank final reference
   }
+
   public BlankFinal(int x) {
     j = x; // Initialize blank final
     p = new Poppet(x); // Initialize blank final reference

@@ -4,14 +4,14 @@ package reusing; /* Added by Eclipse.py */
 import static net.mindview.util.Print.*;
 
 class Plate {
-  Plate(int i) {
-    print("Plate constructor");
-  }
+//  Plate(int i) {
+//    print("Plate constructor");
+//  }
 }
 
 class DinnerPlate extends Plate {
   DinnerPlate(int i) {
-    super(i);
+//    super(i);
     print("DinnerPlate constructor");
   }
 }	
@@ -43,6 +43,7 @@ class Knife extends Utensil {
   }
 }
 
+
 // A cultural way of doing something:
 class Custom {
   Custom(int i) {
@@ -55,16 +56,16 @@ public class PlaceSetting extends Custom {
   private Fork frk;
   private Knife kn;
   private DinnerPlate pl;
-  public PlaceSetting(int i) {
+  public PlaceSetting(int i,Spoon spoon) {
     super(i + 1);
-    sp = new Spoon(i + 2);
+//    sp = spoon;
     frk = new Fork(i + 3);
     kn = new Knife(i + 4);
     pl = new DinnerPlate(i + 5);
     print("PlaceSetting constructor");
   }
   public static void main(String[] args) {
-    PlaceSetting x = new PlaceSetting(9);
+    PlaceSetting x = new PlaceSetting(9,null);
   }
 } /* Output:
 Custom constructor

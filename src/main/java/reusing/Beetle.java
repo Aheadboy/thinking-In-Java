@@ -6,6 +6,7 @@ import static net.mindview.util.Print.*;
 class Insect {
   private int i = 9;
   protected int j;
+  private int k = printInit("Insect.k initialized");
   Insect() {
     print("i = " + i + ", j = " + j);
     j = 39;

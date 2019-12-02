@@ -32,7 +32,7 @@ public class FinalData {
   public static void main(String[] args) {
     FinalData fd1 = new FinalData("fd1");
     //! fd1.valueOne++; // Error: can't change value
-    fd1.v2.i++; // Object isn't constant!
+    fd1.v2.i++; // Object isn't constant!//final 对象，对象本身是可以变化的
     fd1.v1 = new Value(9); // OK -- not final
     for(int i = 0; i < fd1.a.length; i++)
       fd1.a[i]++; // Object isn't constant!

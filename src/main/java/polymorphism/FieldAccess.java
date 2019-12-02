@@ -1,7 +1,7 @@
 //: polymorphism/FieldAccess.java
 package polymorphism; /* Added by Eclipse.py */
 // Direct field access is determined at compile time.
-
+//仅普通方法可以多态。静态，final（private 隐式final）方法，以及field是编译时绑定，不可多态。
 class Super {
   public int field = 0;
   public int getField() { return field; }
@@ -16,14 +16,12 @@ class Sub extends Super {
 public class FieldAccess {
   public static void main(String[] args) {
     Super sup = new Sub(); // Upcast
-    System.out.println("sup.field = " + sup.field +
-      ", sup.getField() = " + sup.getField());
+    System.out.println("sup.field = " + sup.field + ", sup.getField() = " + sup.getField());
     Sub sub = new Sub();
-    System.out.println("sub.field = " +
-      sub.field + ", sub.getField() = " +
-      sub.getField() +
-      ", sub.getSuperField() = " +
-      sub.getSuperField());
+    System.out.println(
+                    "sub.field = " + sub.field
+                    + ", sub.getField() = " + sub.getField()
+                    + ", sub.getSuperField() = " + sub.getSuperField());
   }
 } /* Output:
 sup.field = 0, sup.getField() = 1

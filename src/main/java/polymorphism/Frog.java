@@ -26,10 +26,8 @@ class Description {
 }
 
 class LivingCreature {
-  private Characteristic p =
-    new Characteristic("is alive");
-  private Description t =
-    new Description("Basic Living Creature");
+  private Characteristic p = new Characteristic("is alive");
+  private Description t = new Description("Basic Living Creature");
   LivingCreature() {
     print("LivingCreature()");
   }

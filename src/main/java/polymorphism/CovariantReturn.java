@@ -1,6 +1,10 @@
 //: polymorphism/CovariantReturn.java
 package polymorphism; /* Added by Eclipse.py */
 
+/**
+ *
+ * 前两个继承关系--ljj
+ */
 class Grain {
   public String toString() { return "Grain"; }
 }
@@ -9,6 +13,10 @@ class Wheat extends Grain {
   public String toString() { return "Wheat"; }
 }
 
+
+/**
+ * 后两个继承关系--ljj
+ */
 class Mill {
   Grain process() { return new Grain(); }
 }

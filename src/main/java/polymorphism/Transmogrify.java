@@ -4,6 +4,9 @@ package polymorphism; /* Added by Eclipse.py */
 // via composition (the "State" design pattern).
 import static net.mindview.util.Print.*;
 
+/**
+ * 可以看作状态模式--原书说法，ljj注释
+ */
 class Actor {
   public void act() {}
 }

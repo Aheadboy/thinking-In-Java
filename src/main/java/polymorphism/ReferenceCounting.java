@@ -21,7 +21,7 @@ class Shared {
     if(--refcount == 0)
       print("Disposing " + this);
   }
-  public String toString() { return "Shared " + id; }
+  public String toString() { return "Shared " + id; }//可知，Shared实例化的个数。
 }
 
 class Composing {

@@ -13,7 +13,7 @@ implements Readable {
   public int read(CharBuffer cb) {
     if(count-- == 0)
       return -1;
-    String result = Double.toString(next()) + " ";
+    String result = Double.toString(next()) + " ";//这个next是父类的--ljj
     cb.append(result);
     return result.length();
   }	

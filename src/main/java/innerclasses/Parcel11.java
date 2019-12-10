@@ -2,18 +2,21 @@
 package innerclasses; /* Added by Eclipse.py */
 // Nested classes (static inner classes).
 
+/**
+ * 静态内部类，称为，嵌套类哦。
+ */
+
 public class Parcel11 {
   private static class ParcelContents implements Contents {
     private int i = 11;
     public int value() { return i; }
   }
-  protected static class ParcelDestination
-  implements Destination {
+  protected static class ParcelDestination implements Destination {
     private String label;
     private ParcelDestination(String whereTo) {
       label = whereTo;
     }
-    public String readLabel() { return label; }	
+    public String readLabel() { return label; }
     // Nested classes can contain other static elements:
     public static void f() {}
     static int x = 10;

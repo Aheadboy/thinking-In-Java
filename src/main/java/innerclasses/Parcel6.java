@@ -1,7 +1,7 @@
 //: innerclasses/Parcel6.java
 package innerclasses; /* Added by Eclipse.py */
 // Nesting a class within a scope.
-
+//内部类，内嵌在作用域中。
 public class Parcel6 {
   private void internalTracking(boolean b) {
     if(b) {

@@ -2,6 +2,9 @@
 package innerclasses; /* Added by Eclipse.py */
 // Holds a sequence of Objects.
 
+/**
+ * 迭代器模式--ljj原书的说法。
+ */
 interface Selector {
   boolean end();
   Object current();

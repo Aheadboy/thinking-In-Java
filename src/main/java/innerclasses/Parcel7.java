@@ -7,6 +7,9 @@ package innerclasses; /* Added by Eclipse.py */
  */
 public class Parcel7 {
   public Contents contents() {
+    /**
+     * //这里相当于定义类一个继承自Contents接口的子类，并在定义处直接调用该子类的默认构造函数，来创建实例。
+     */
     return new Contents() { // Insert a class definition
       private int i = 11;
       public int value() { return i; }

@@ -3,6 +3,10 @@ package innerclasses; /* Added by Eclipse.py */
 // An anonymous inner class that performs
 // initialization. A briefer version of Parcel5.java.
 
+/**
+ * 匿名内部类，在定义处，直接调用定义好的这个类的构造函数，来进行，定义处初始化。--ljj注释
+ * 对比Parcel5,可以很好的理解，**匿名**内部类--ljj理解注释
+ */
 public class Parcel9 {
   // Argument must be final to use inside
   // anonymous inner class:

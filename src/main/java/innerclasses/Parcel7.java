@@ -2,6 +2,9 @@
 package innerclasses; /* Added by Eclipse.py */
 // Returning an instance of an anonymous inner class.
 
+/**
+ * 匿名内部类
+ */
 public class Parcel7 {
   public Contents contents() {
     return new Contents() { // Insert a class definition

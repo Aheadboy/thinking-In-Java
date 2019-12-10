@@ -17,6 +17,7 @@ public class Parcel6 {
     }
     // Can't use it here! Out of scope:
     //! TrackingSlip ts = new TrackingSlip("x");
+    //作用域的外部就使用不到其内的类了
   }	
   public void track() { internalTracking(true); }
   public static void main(String[] args) {

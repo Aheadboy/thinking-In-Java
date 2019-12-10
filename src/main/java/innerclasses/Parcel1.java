@@ -16,6 +16,12 @@ public class Parcel1 {
   }	
   // Using inner classes looks just like
   // using any other class, within Parcel1:
+
+  /**
+   * 在定义内部类的外部类中，使用其内部类，
+   * 跟平时使用普通类几乎是一样的。
+   * @param dest
+   */
   public void ship(String dest) {
     Contents c = new Contents();
     Destination d = new Destination(dest);

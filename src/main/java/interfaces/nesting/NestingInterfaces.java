@@ -4,7 +4,11 @@ package interfaces.nesting;
 /**
  * 该文件中文注释--ljj
  * 接口嵌套在类中，可以private，但是也只能在该类内部implement该接口。
- * 接口嵌套在接口中，是不可以为private。
+ * 接口嵌套在接口中，是不可以为private。因为：Remember, interface members can only be public..
+ */
+
+/**
+ * 举例，接口嵌套在类中，这个接口可以被修饰为private
  */
 class A {
   interface B {
@@ -40,8 +44,11 @@ class A {
     dRef = d;
     dRef.f();
   }
-}	
+}
 
+/**
+ * 举例，接口嵌套在接口中，这个接口只能是public。如果不是public，编译时就会报错。
+ */
 interface E {
   interface G {
     void f();

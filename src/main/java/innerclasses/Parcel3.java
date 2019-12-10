@@ -16,6 +16,7 @@ public class Parcel3 {
     Parcel3 p = new Parcel3();
     // Must use instance of outer class
     // to create an instance of the inner class:
+    //必须使用外部类的实例，来创建内部类的实例
     Parcel3.Contents c = p.new Contents();
     Parcel3.Destination d = p.new Destination("Tasmania");
   }

@@ -6,6 +6,7 @@ public class Parcel1 {
   class Contents {
     private int i = 11;
     public int value() { return i; }
+    public int ljjint;
   }
   class Destination {
     private String label;

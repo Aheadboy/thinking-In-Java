@@ -19,6 +19,7 @@ public class SweetShop {
   public static void main(String[] args) {	
     print("inside main");
     new Candy();
+    new Candy();//没有再次加载了，--ljj
     print("After creating Candy");
     try {
       Class.forName("Gum");

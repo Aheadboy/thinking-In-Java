@@ -10,7 +10,7 @@ interface Shoots {}
 class Toy {
   // Comment out the following default constructor
   // to see NoSuchMethodError from (*1*)
-  Toy() {}
+//  Toy() {}
   Toy(int i) {}
 }
 
@@ -43,7 +43,7 @@ public class ToyTest {
       // Requires default constructor:
       obj = up.newInstance();
     } catch(InstantiationException e) {
-      print("Cannot instantiate");
+      print("Cannot instantiate-使用newInstance必须带有默认的构造器，也就是无参的构造函数。");
       System.exit(1);
     } catch(IllegalAccessException e) {
       print("Cannot access");
